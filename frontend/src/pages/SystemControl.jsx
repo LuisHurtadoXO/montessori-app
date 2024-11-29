@@ -29,7 +29,7 @@ function SystemControl() {
     setShapes(generatedShapes);
   }, []);
 
-  useEffect(() => {
+  useEffect(() => { // temporary device count update for testing
     if (isSystemOn) {
       const timer = setInterval(() => {
         const newDeviceCount = Math.floor(Math.random() * 5) + 1;
